@@ -41,16 +41,16 @@ git push
 ## netty如何写日志
 ### 日志
 - 使用slf4j
-- 简单的使用slf4j不就可以了吗，为何还要重新写代码
+- 简单的使用slf4j不就可以了吗，为何还要重新写代码
 ```
 private static final InternalLogger logger = InternalLoggerFactory.getInstance(AbstractByteBuf.class);
 logger.info("Hello, World");
 ```
 
-## IO框架
+## IO框架
 既然netty是一个IO框架，那肯定是使用java对于IO支持的代码，再结合网络框架来做到异步IO的功能
 - import java.nio
-- IO要考虑到的点：同步、异步、是否阻塞
+- IO 要考虑到的点：同步、异步、是否阻塞
 
 ### nio
 - Selector
@@ -61,7 +61,7 @@ logger.info("Hello, World");
 - PrintWriter
 
 ## 思考点
-- maven optional
+- maven optional
 - 研究slf4j
 
 ## 经验随手记
@@ -77,9 +77,4 @@ logger.info("Hello, World");
 *.ipr
 *.iws
 .idea/
-```
-
-- netty里使用的logback的配置文件logback.xml
-```
-
 ```
